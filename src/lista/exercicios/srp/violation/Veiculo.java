@@ -2,20 +2,15 @@ package lista.exercicios.srp.violation;
 
 public class Veiculo {
 
-    private final int capacidadeTanqueCombustivel;
-    private int quantidadeCombustivel;
+	private final int capacidadeTanqueCombustivel;
+	private int quantidadeCombustivel;
 
-    public Veiculo(int capacidadeTanque) {
-        this.capacidadeTanqueCombustivel = capacidadeTanque;
-        quantidadeCombustivel = capacidadeTanque;
-    }
+	public Veiculo(int capacidadeTanque) {
+		this.capacidadeTanqueCombustivel = capacidadeTanque;
+		quantidadeCombustivel = capacidadeTanque;
+	}
 
-    // isto é responsabilidade do veiculo?
-    public void reabastecimento(){
-        quantidadeCombustivel = capacidadeTanqueCombustivel;
-    }
-
-    public int getQuantidadeCombustivel() {
+	public int getQuantidadeCombustivel() {
 		return quantidadeCombustivel;
 	}
 
@@ -27,7 +22,7 @@ public class Veiculo {
 		return capacidadeTanqueCombustivel;
 	}
 
-    public void acelerar() {
-        quantidadeCombustivel--;
-    }
+	public void acelerar() {
+		quantidadeCombustivel--;
+	}
 }
