@@ -2,29 +2,17 @@ package lista.exercicios.isp.violation;
 
 public class Carro extends Veiculo {
 
-    private boolean radioOn;
+	private Radio radio;
 
-    public boolean isRadioOn() {
-        return radioOn;
-    }
+	public Carro(Radio radio) {
+		this.radio = radio;
+	}
 
-	@Override
 	public void ligarRadio() {
-		radioOn = true;
+		radio.ligar();
 	}
 
-	@Override
 	public void desligarRadio() {
-        radioOn = false;
-	}
-
-	@Override
-	public void ligarCamera() {
-		//nada pra fazer aqui
-	}
-
-	@Override
-	public void desligarCamera() {
-		// nada pra fazer aqui
+		radio.desligar();
 	}
 }

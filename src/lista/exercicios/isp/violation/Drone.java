@@ -2,29 +2,13 @@ package lista.exercicios.isp.violation;
 
 public class Drone extends Veiculo {
 
-    private boolean cameraOn;
+	private Camera camera;
 
-    public boolean isCameraOn() {
-        return cameraOn;
-    }
-
-	@Override
-	public void ligarRadio() {
-		// nada pra fazer aqui
-	}
-
-	@Override
-	public void desligarRadio() {
-		// nada pra fazer aqui
-	}
-
-	@Override
 	public void ligarCamera() {
-		cameraOn = true;
+		camera.ligar();
 	}
 
-	@Override
 	public void desligarCamera() {
-		cameraOn = false;
+		camera.desligar();
 	}
 }
